@@ -9,7 +9,7 @@ services:
     ports:
       - "33060:3306"
     volumes:
-      - mysql-db-data:/var/lib/mysql
+      - soundClover-data:/var/lib/mysql
 
 volumes:
-  mysql-db-data:
+  soundClover-data:
