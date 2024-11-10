@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  mysql:
+    build: .
+    container_name: soundClover
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    ports:
+      - "33060:3306"
+    volumes:
+      - mysql-db-data:/var/lib/mysql
+
+volumes:
+  mysql-db-data:
